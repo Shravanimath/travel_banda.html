@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .flight-list {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            position: relative;
+        }
+        .tooltip {
+            display: none;
+            position: absolute;
+            background: white;
+            color: black;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        a:hover .tooltip {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2>Book Your Flight</h2>
+    <div class="flight-list">
+        <a href="https://www.makemytrip.com/" target="_blank">Flights from Delhi to Mumbai
+            <div class="tooltip">Book flights from Delhi to Mumbai easily!</div>
+        </a>
+        <a href="https://www.yatra.com/" target="_blank">Flights from Bangalore to Chennai
+            <div class="tooltip">Find the best fares for Bangalore to Chennai flights.</div>
+        </a>
+        <a href="https://www.goibibo.com/" target="_blank">Flights from Kolkata to Hyderabad
+            <div class="tooltip">Secure your seat for Kolkata to Hyderabad travel.</div>
+        </a>
+        <a href="https://www.expedia.co.in/" target="_blank">Flights from Pune to Jaipur
+            <div class="tooltip">Explore Jaipur with affordable Pune to Jaipur flights.</div>
+        </a>
+    </div>
+</body>
+</html>
